@@ -3,7 +3,7 @@
   <div class="blog">
     <div class="blogdiv">
       <div v-for="blog in blogpost" :key="blog.id" class="blogpage">
-        <img v-bind:src="blog.image" alt="image" />
+        <img src="../assets/teem1.jpg " alt="image" />
         <router-link :to="{ name: 'blogdetails', params:{ id: blog.id} }">
               <h5>{{ blog.title }}</h5>
         </router-link>
@@ -38,14 +38,14 @@ export default {
           id: 1,
           contetnt:
             "That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.",
-          image: "http://localhost:8080/img/team.3b1357ff.jpg",
+    /*       image: "http://localhost:8080/img/team.3b1357ff.jpg", */
         },
         {
           title: "Google inks pact for new 35-storey office",
           id: 2,
           contetnt:
             "That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying. ",
-          image: "http://localhost:8080/img/team.3b1357ff.jpg",
+         /*  image: "http://localhost:8080/img/team.3b1357ff.jpg", */
         },
 
         {
@@ -53,14 +53,14 @@ export default {
           id: 3,
           contetnt:
             "That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.",
-          image: "http://localhost:8080/img/team.3b1357ff.jpg",
+         // image: "http://localhost:8080/img/team.3b1357ff.jpg",
         },
         {
           title: "Google inks pact for new 35-storey office",
           id: 4,
           contetnt:
             "That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.",
-          image: "http://localhost:8080/img/team.3b1357ff.jpg",
+        //  image: "http://localhost:8080/img/team.3b1357ff.jpg",
         },
       ],
     };
