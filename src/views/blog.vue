@@ -119,5 +119,18 @@ export default {
     width: 100%;
     margin: 10px 0px;
   }
+  .blogpage h5 {
+  font-size: 15px;
+  text-align: center;
+}
+
+.blogpage img {
+  width: 100%;
+  height: 200px;
+}
+.blogpage p {
+  font-size: 13px;
+  margin: 10px 10px;
+}
 }
 </style>
