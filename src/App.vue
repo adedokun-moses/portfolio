@@ -14,7 +14,7 @@
       </div>
 
       <div class="sign_up">
-        <h5><a href="" download="resume">Resume</a></h5>
+         <h5><a href="https://archive.org/download/adedokun-moses/Adedokun_Moses.docx">Resume</a></h5>
       </div>
     </nav>
   </div>
@@ -39,7 +39,8 @@
         </div>
 
         <div class="sign_up">
-          <h5><a href="https://docs.google.com/document/d/1yqpQKw7vquXc0048zswjtb3dCjOEdV1v/edit?usp=drivesdk&ouid=115438173640235744061&rtpof=true&sd=true" download="resume">Resume</a></h5>
+          <h5><a href="https://archive.org/download/adedokun-moses/Adedokun_Moses.docx">Resume</a></h5>
+         
         </div>
       </div>
     </nav>
