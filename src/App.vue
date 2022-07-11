@@ -26,7 +26,7 @@
         <span><router-link to="/" class="concept" style="margin-left: 50px">Harde_Concept</router-link></span>     
     </div>
 
-    <nav v-if="mbnav == true">
+    <nav v-if="mbnav == true" id="myNav">
       <div class="mobile">
         <div class="router">
           <router-link to="/" @click="toggleBtn">Home</router-link>
@@ -68,6 +68,9 @@ export default {
       //alert("well");
     },
   },
+  mounted() {
+    
+  }
 };
 </script>
 <style>

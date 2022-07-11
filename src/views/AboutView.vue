@@ -13,7 +13,7 @@
 
     <div class="team">
       <div>
-        <img src="../assets/office.jpg" style="width: 100%;" />
+        <img src="../assets/office.jpg" style="width: 100%" />
       </div>
       <div class="team_info">
         <h5>Our Office</h5>
@@ -46,7 +46,14 @@
     </div>
     <div class="team_member">
       <div>
-        <img src="../assets/simplenew.jpg" class="team_image" />
+        <div class="team_image">
+          <img
+            src="../assets/simplenew.jpg"
+            class="team_image"
+            style="width: 100%"
+          />
+        </div>
+
         <h4>
           <b>Mr. Simple Abubakar</b> <br />
           Frontend Engineer
@@ -66,15 +73,19 @@
         </div>
       </div>
       <div>
-        <img src="../assets/baby.jpg" class="team_image" />
+        <div class="team_image">
+          <img src="../assets/baby.jpg" style="width: 100%" />
+        </div>
+
         <h4>
           <b>Mr. Oluwole Babatomiwa</b> <br />
           Software Engineer
         </h4>
         <h3>
-        With over five years experience in the tech world, Mr Oluwole has built various applicaions. 
-          Proficient with the use of HTML, CSS, Java Script, Vue JS, React, Phython, Node Js and 
-          other version control system like Github. 
+          With over five years experience in the tech world, Mr Oluwole has
+          built various applicaions. Proficient with the use of HTML, CSS, Java
+          Script, Vue JS, React, Phython, Node Js and other version control
+          system like Github.
         </h3>
 
         <div class="team_icons">
@@ -85,7 +96,13 @@
         </div>
       </div>
       <div>
-        <img src="../assets/segzy.jpeg" class="team_image" />
+        <div class="team_image">
+          <img
+            src="../assets/segzy.jpeg"
+            class="team_image"
+            style="width: 100%"
+          />
+        </div>
         <h4>
           <b>Mr. Segun Oluwole</b> <br />
           Full Stack Developer
@@ -98,23 +115,33 @@
         </h3>
 
         <div class="team_icons">
-          <a href="https://twitter.com/segzyswitch"><i class="fa fa-twitter"></i></a>
-          <a href="https://instagram.com/official_segzyswitch"> <i class="fa fa-instagram"></i></a>
-          <a href="https://facebook.com/segzyswitch"><i class="fa fa-facebook"></i></a>
+          <a href="https://twitter.com/segzyswitch"
+            ><i class="fa fa-twitter"></i
+          ></a>
+          <a href="https://instagram.com/official_segzyswitch">
+            <i class="fa fa-instagram"></i
+          ></a>
+          <a href="https://facebook.com/segzyswitch"
+            ><i class="fa fa-facebook"></i
+          ></a>
           <a href=""><i class="fa fa-github"></i> </a>
         </div>
       </div>
       <div>
-        <img src="../assets/moses.jpg" class="team_image" />
+        <div class="team_image">
+          <img src="../assets/moses.jpg" style="width: 100%" />
+        </div>
+
         <h4>
           <b>Mr. Adedokun Moses</b> <br />
           Frontend Engineer
         </h4>
         <h3>
           With over five years experience in the tech world, Mr Moses has built
-          various applicaions. Proficient with the use of HTML, CSS, Java
+          various applicaions.
+          <!-- Proficient with the use of HTML, CSS, Java
           Script, Vue JS, React, Phython, Node Js and other version control
-          system like Github.
+          system like Github. -->
         </h3>
 
         <div class="team_icons">
@@ -222,8 +249,12 @@ export default {
 .team_image {
   width: 100%;
   background-size: cover;
-  height: 180px;
+  height: 230px;
+  overflow: hidden;
   border-radius: 10px;
+}
+.team_image img {
+  min-height: 100%;
 }
 
 .team_info h5 {
@@ -240,12 +271,13 @@ export default {
 .team_member > div {
   width: 100%;
   margin: 10px;
-  height: 400px;
   border-radius: 5px;
 }
 .team_member h3 {
   font-size: 15px;
   margin-top: 20px;
+  height: 100px;
+  overflow: hidden;
 }
 
 .team_icons i {
@@ -298,6 +330,10 @@ export default {
     margin-top: 20px;
     flex-direction: column;
   }
+  .team > div {
+    width: 100%;
+    margin: 0px;
+  }
 
   .team_member {
     display: flex;
@@ -306,9 +342,15 @@ export default {
   }
   .team_member > div {
     width: 100%;
-    margin: 20px;
-    height: 400px;
+    margin: 0px;
     border-radius: 5px;
+  }
+
+  .team_member h3 {
+    font-size: 15px;
+    margin-top: 20px;
+    height: auto;
+    overflow: hidden;
   }
   .company {
     background: #212529;
@@ -330,6 +372,10 @@ export default {
 
   .clientimg i {
     margin: 10px 10px;
+  }
+
+  .team_image {
+    height: auto;
   }
 }
 </style>
