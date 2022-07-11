@@ -22,7 +22,7 @@
     </div>
     <div class="form_det">
       <div class="formbar">
-        <form>
+        <form @submit.prevent="SubmitForm">
           <textarea
             name=""
             id=""
@@ -31,11 +31,12 @@
             placeholder="Enter Your Name"
           ></textarea>
           <div class="imputtext">
-            <input type="text" placeholder="Enter Your Name " />
-            <input type="email" placeholder="Enter Your Email " class="sec" />
+            <input type="text" placeholder="Enter Your Name " >
+            <input type="email" placeholder="Enter Your Email " class="sec" >
+       
           </div>
 
-          <input type="text" placeholder="Enter Your Subjecct " />
+          <input type="text" placeholder="Enter Your Subjecct " >
 
           <button>Send</button>
         </form>
@@ -87,8 +88,17 @@ export default {
     return {
       title: "Contact Us",
       center: { lat: 51.093048, lng: 6.84212 },
+    //  EmailError: ""
     };
   },
+
+  methods:{
+    SubmitForm(){
+      alert("Message Submitted")
+     //
+  //   this.EmailError = this.email.lenght > 5 ? '': 'enter a valid mail'
+    }
+  }
 };
 </script>
 

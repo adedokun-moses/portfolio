@@ -50,7 +50,7 @@
           <div class="social_media">
             <a href="https://twitter.com/uplifte_harde"><i class="fa fa-twitter fa-2x"></i></a>
             <a href="https://www.facebook.com/adedokunmoses1"><i class="fa fa-facebook fa-2x"></i></a>
-            <a href="https://www.linkedin.com/in/adedokun-moses-703aa1209"><i class="fa fa-linkedin fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/adedokun-moses-703aa1209"><i class="fa fa-linkerundin fa-2x"></i></a>
             <a href="https://github.com/adedokun-moses"> <i class="fa fa-github fa-2x"></i></a>
     
           </div>
