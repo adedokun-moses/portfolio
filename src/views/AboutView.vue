@@ -145,10 +145,10 @@
         </h3>
 
         <div class="team_icons">
-          <a href=""><i class="fa fa-twitter"></i></a>
-          <a href=""> <i class="fa fa-instagram"></i></a>
-          <a href=""><i class="fa fa-facebook"></i></a>
-          <a href=""><i class="fa fa-github"></i> </a>
+          <a href="https://twitter.com/uplifte_harde"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/adedokun-moses-703aa1209"> <i class="fa fa-instagram"></i></a>
+          <a href="https://www.facebook.com/adedokunmoses1"><i class="fa fa-facebook"></i></a>
+          <a href="https://github.com/adedokun-moses"><i class="fa fa-github"></i> </a>
         </div>
       </div>
     </div>
