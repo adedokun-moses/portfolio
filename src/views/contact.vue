@@ -3,8 +3,11 @@
 
   <div class="contact_">
     <div class="map">
+       
       <div class="mapouter">
+        
         <div class="gmap_canvas">
+          
           <iframe
            style="width:100%; height:500px;"
             id="gmap_canvas"
@@ -13,6 +16,7 @@
             scrolling="no"
             marginheight="0"
             marginwidth="0"
+            
           ></iframe
           ><a href="https://123movies-to.org"></a><br />
 
@@ -37,7 +41,6 @@
           </div>
 
           <input type="text" placeholder="Enter Your Subjecct " >
-
           <button>Send</button>
         </form>
       </div>
@@ -105,6 +108,7 @@ export default {
 <style scoped>
 .map{
   width: 100%;
+  text-align: center;
 }
 .mapouter {
   position: relative;

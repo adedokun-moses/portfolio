@@ -356,7 +356,7 @@ export default {
   }
   .img_feature {
     width: 100%;
-    height: 350px;
+
   }
   .project {
     text-align: center;

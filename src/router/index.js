@@ -5,6 +5,8 @@ import Portfolio from '../views/portfolio.vue'
 import Blog from '../views/blog.vue'
 import Contact from '../views/contact.vue'
 import Blogdetails from '../views/blogdetails.vue'
+/* import { nextTick } from 'vue' */
+/* import Error from '../views/error.vue' */
 
 const routes = [
   {
@@ -33,6 +35,11 @@ const routes = [
     name: 'contact',
     component: Contact
   },
+/*   {
+    path: '/error',
+    name: 'error',
+    component: Error
+  }, */
 
   // Blog Details Parameter
    {
@@ -40,6 +47,8 @@ const routes = [
     name: 'blogdetails',
     component: Blogdetails
   }
+
+
 
 
 
@@ -55,6 +64,25 @@ const router = createRouter({
     //Always scroll to top
     return {top: 0}
   }
+});
+
+/* >>>>>>  >>>>>>>>>>>>>>>>-------------------------    
+----------      Global Guards -----------------
+/* >>>>>>>>>>>>>>>>>>>>>>------------------------------ */
+/*  router.beforeEach ((to, from, next) => {
+    
+      if(to.path === '/blog'){
+        next('/contact')
+      } else if( to.path === '/about'){
+        const error = new Error ('Error Message')
+        next(error)
+      } else{
+        next()
+      }
 })
+  */
+/* router.resolve(){
+
+} */
 
 export default router

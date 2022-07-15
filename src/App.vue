@@ -1,6 +1,6 @@
 <template>
   <div class="bigscreen">
-    <nav>
+    <nav >
       <div class="logo">
         <h3><router-link to="/">Harde_Concept</router-link></h3>
       </div>
@@ -11,22 +11,31 @@
         <router-link to="/portfolio">Portfolio</router-link>
         <router-link to="/blog">Blog</router-link>
         <router-link to="/contact">Contact</router-link>
+        <!--        <router-link to="/error">Error</router-link> -->
       </div>
 
       <div class="sign_up">
-         <h5><a href="https://archive.org/download/adedokun-moses/Adedokun_Moses.docx">Resume</a></h5>
+        <h5>
+          <a
+            href="https://archive.org/download/adedokun-moses/Adedokun_Moses.docx"
+            >Resume</a
+          >
+        </h5>
       </div>
     </nav>
   </div>
 
   <div class="smallscreen">
     <div class="buttonMob">
-   
-        <span class="fa fa-bars fa-1x" @click="toggleBtn"></span>
-        <span><router-link to="/" class="concept" style="margin-left: 50px">Harde_Concept</router-link></span>     
+      <span class="fa fa-bars fa-1x" @click="toggleBtn"></span>
+      <span
+        ><router-link to="/" class="concept" style="margin-left: 50px"
+          >Harde_Concept</router-link
+        ></span
+      >
     </div>
 
-    <nav v-if="mbnav == true" id="myNav">
+    <nav v-if="mbnav == true" id="myNav" :class="{ 'navbar--hidden': !showNavbar }">
       <div class="mobile">
         <div class="router">
           <router-link to="/" @click="toggleBtn">Home</router-link>
@@ -36,11 +45,16 @@
           >
           <router-link to="/blog" @click="toggleBtn">Blog</router-link>
           <router-link to="/contact" @click="toggleBtn">Contact</router-link>
+          <!--  <router-link to="/error">Error</router-link> -->
         </div>
 
         <div class="sign_up">
-          <h5><a href="https://archive.org/download/adedokun-moses/Adedokun_Moses.docx">Resume</a></h5>
-         
+          <h5>
+            <a
+              href="https://archive.org/download/adedokun-moses/Adedokun_Moses.docx"
+              >Resume</a
+            >
+          </h5>
         </div>
       </div>
     </nav>
@@ -54,6 +68,8 @@ export default {
   data() {
     return {
       mbnav: false,
+      showNavbar: true,
+      lastScrollPosition: 0,
     };
   },
 
@@ -68,12 +84,36 @@ export default {
 
       //alert("well");
     },
+
+    onScroll() {
+      // Get the current scroll position
+      const currentScrollPosition =
+        window.pageYOffset || document.documentElement.scrollTop;
+      if (currentScrollPosition < 0) {
+        return;
+      }
+      // Stop executing this function if the difference between
+      // current scroll position and last scroll position is less than some offset
+      if (Math.abs(currentScrollPosition - this.lastScrollPosition) < 300) {
+        return;
+      }
+      this.showNavbar = currentScrollPosition < this.lastScrollPosition;
+      this.lastScrollPosition = currentScrollPosition;
+    },
   },
   mounted() {
-    
-  }
+    window.addEventListener("scroll", this.onScroll);
+  },
+  beforeDestroy() {
+    window.removeEventListener("scroll", this.onScroll);
+  },
 };
 </script>
+
+
+
+
+
 <style>
 * {
   margin: 0px;
@@ -91,8 +131,14 @@ nav {
   z-index: 1;
   position: fixed;
   width: 100%;
+  transform: translate3d(0, 0, 0);
+  transition: 0.1s all ease-out;
 
   /*  width: 100% */
+}
+nav.navbar--hidden {
+  box-shadow: none;
+  transform: translate3d(0, -100%, 0);
 }
 nav > div {
   width: 100%;
@@ -104,7 +150,6 @@ nav a {
   color: white;
   padding: 10px;
   text-decoration: none;
-
 }
 
 nav a.router-link-exact-active {
@@ -167,7 +212,6 @@ nav a.router-link-exact-active {
     color: white;
   }
   .concept {
-  
     font-size: 20px;
     text-decoration: none;
     text-align: right;
@@ -176,7 +220,6 @@ nav a.router-link-exact-active {
   .buttonMob a {
     color: white;
     text-decoration: none;
-    
   }
 
   .mobile {
