@@ -352,11 +352,10 @@ export default {
     width: 100%;
     margin: 0px 0px;
     border-radius: 8px;
-    height: 400px;
+    height: auto;
   }
   .img_feature {
     width: 100%;
-
   }
   .project {
     text-align: center;

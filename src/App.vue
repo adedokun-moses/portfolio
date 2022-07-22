@@ -1,6 +1,6 @@
 <template>
   <div class="bigscreen">
-    <nav >
+    <nav>
       <div class="logo">
         <h3><router-link to="/">Harde_Concept</router-link></h3>
       </div>
@@ -35,7 +35,11 @@
       >
     </div>
 
-    <nav v-if="mbnav == true" id="myNav" :class="{ 'navbar--hidden': !showNavbar }">
+    <nav
+      v-if="mbnav == true"
+      id="myNav"
+      :class="{ 'navbar--hidden': !showNavbar }"
+    >
       <div class="mobile">
         <div class="router">
           <router-link to="/" @click="toggleBtn">Home</router-link>
@@ -115,6 +119,11 @@ export default {
 
 
 <style>
+body {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+}
 * {
   margin: 0px;
   padding: 0px;
@@ -155,6 +164,16 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
+
+nav a:hover {
+  font-weight: bold;
+  font-size: 15px;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  
+}
+
 
 .sign_up h5 {
   margin: 0px 150px;
