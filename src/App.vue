@@ -38,8 +38,7 @@
     <nav
       v-if="mbnav == true"
       id="myNav"
-      :class="{ 'navbar--hidden': !showNavbar }"
-    >
+      :class="{ 'navbar--hidden': !showNavbar }"  >
       <div class="mobile">
         <div class="router">
           <router-link to="/" @click="toggleBtn">Home</router-link>
