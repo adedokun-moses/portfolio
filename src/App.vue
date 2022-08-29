@@ -17,7 +17,7 @@
       <div class="sign_up">
         <h5>
           <a
-            href="https://archive.org/download/adedokun-moses/Adedokun_Moses.docx"
+            href="https://archive.org/download/adedokun-moses-cv-new_202208/Adedokun_Moses_CV_new.docx"
             >Resume</a
           >
         </h5>
